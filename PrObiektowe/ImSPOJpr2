@@ -1,0 +1,16 @@
+#include <iostream>
+#include <map>
+#include <cmath>
+
+using namespace std;
+
+string DuzLit(string napis)
+{
+    string naDuze;
+    for(int i = 0; i < napis.length(); i++)
+    {
+        if(napis[i] > 95) naDuze += napis[i] - 32;
+        else naDuze += napis[i];
+    }
+    return naDuze;
+}
